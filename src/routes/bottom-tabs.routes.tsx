@@ -14,10 +14,10 @@ export default function BottomTabsRoutes(){
     return(
         <NavigationContainer>
             <Tab.Navigator
-                initialRouteName='Home'
+                initialRouteName='home'
             >
                 <Tab.Screen
-                    name='Home'
+                    name='home'
                     component={HomeScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
@@ -27,10 +27,11 @@ export default function BottomTabsRoutes(){
                                 color={color}
                             />
                         ),
+                        title: 'Início'
                     }}
                 />
                <Tab.Screen
-                    name='Horário'
+                    name='horario'
                     component={HorarioScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
@@ -40,10 +41,11 @@ export default function BottomTabsRoutes(){
                                 color={color}
                             />
                         ),
+                        title: 'Horário'
                     }}
                 />
                <Tab.Screen
-                    name='Ajuda'
+                    name='ajuda'
                     component={AjudaScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
@@ -53,6 +55,7 @@ export default function BottomTabsRoutes(){
                                 color={color}
                             />
                         ),
+                        title: 'Ajuda'
                     }}
                 />
             </Tab.Navigator>
