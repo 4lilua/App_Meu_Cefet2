@@ -2,10 +2,11 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1, //Ocupa todo espaço disponível
+        flexGrow: 1, //Ocupa todo espaço disponível
         justifyContent: 'center', //Centraliza verticalmente
         alignItems: 'center', //Centraliza horizontalmente
         backgroundColor: '#d6d6d6',
+        padding: 20,
     },
     logo: {
         width: 70,
@@ -13,10 +14,10 @@ export const styles = StyleSheet.create({
         marginBottom: 15,
     },
     input: {
-        height: 40,
+        height: 45,
         borderColor: '#de8d4b',
         borderWidth: 1.5,
-        width: '50%',
+        width: '55%',
         marginBottom: 10,
         paddingHorizontal: 10,
         flexDirection: 'row',
@@ -37,21 +38,13 @@ export const styles = StyleSheet.create({
     },
     textoDia: {
         color: '#de7723',
-        fontSize: 23,
-        marginTop: 15,
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 5,
     },
     textoHorario: {
-        fontSize: 17,
+        fontSize: 18,
         marginTop: 2,
-    },
-    botoesContainer:{
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '70%',
-    },
-    noticiasContainer: {
-        justifyContent: 'center', //Centraliza verticalmente
-        alignItems: 'center', //Centraliza horizontalmente
     },
     botao:{
         //Definição de cores, tamanhos, bordas e posições no botão zerar
@@ -68,9 +61,52 @@ export const styles = StyleSheet.create({
         marginBottom: 25,
     },
     textBotao:{
-        //Definição de cor e tamanho do texto 'ZERAR' do botão zerar
         fontSize: 20,
         color: '#003869',
+    },
+    cardContainer: {
+        width: '90%',
+        marginVertical: 10,
+    },
+    card: {
+        backgroundColor: '#fff',
+        borderRadius: 8,
+        padding: 15,
+        marginBottom: 15,
+        borderLeftWidth: 4,
+        borderLeftColor: '#de8d4b',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+        width: '100%', // Largura total do container pai
+        minHeight: 100, // Altura mínima padrão
+    },
+    cardAjuda: {
+        backgroundColor: '#fff',
+        borderRadius: 8,
+        padding: 15,
+        marginBottom: 15,
+        borderLeftWidth: 4,
+        borderLeftColor: '#de8d4b',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
+        elevation: 3,
+        width: '100%', // Largura total do container pai
+        minHeight: 70, // Altura mínima padrão
+    },
+    cardTitulo: {
+        color: '#003869',
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 5,
+    },
+    cardTexto: {
+        color: '#555',
+        fontSize: 14,
     },
 });
 
