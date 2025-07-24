@@ -10,13 +10,36 @@ export default function HorarioScreen({route}: any) {
       <View style={styles.logo}>
         <Image source={logo} style={styles.logo} />
       </View>
-      <Text>Olá, {aluno}! Aqui estão os seus horários</Text>
-      <Text>
-      Segunda: Sociologia - 07h às 08h40
-      Terça: Física - 7h às 9h40
-      Quarta: Português - 9h às 8h40
-      Quinta: Português - 9h às 8h40
-      Sexta: Português - 9h às 8h40
+      <Text style={styles.texto}>Olá, {aluno}! Aqui estão os seus horários</Text>
+      <Text style={styles.textoDia}>Segunda:</Text>
+      <Text style={styles.textoHorario}>
+        Sociologia - 07h às 08h40 {"\n"}
+        Rede de Computadores - 09h às 10h40 {"\n"}
+        LMMDC - 10h50 às 12h30
+      </Text>
+      <Text style={styles.textoDia}>Terça:</Text>
+      <Text style={styles.textoHorario}>
+        Física - 7h às 8h40 {"\n"}
+        Aplicações Web II - 09h às 10h40 {"\n"}
+        Aplicações Móveis - 10h50 às 12h30
+      </Text>
+      <Text style={styles.textoDia}>Quarta:</Text>
+      <Text style={styles.textoHorario}>
+        LAWII - 7h às 8h40 {"\n"}
+        LAM - 09h às 10h40 {"\n"}
+        Português - 10h50 às 12h30
+      </Text>
+      <Text style={styles.textoDia}>Quinta:</Text>
+      <Text style={styles.textoHorario}>
+        Redação - 7h às 8h40 {"\n"}
+        História - 9h às 10h40 {"\n"}
+        Estrutura de Dados - 10h50 às 12h30
+      </Text>
+      <Text style={styles.textoDia}>Sexta:</Text>
+      <Text style={styles.textoHorario}>
+        Sociologia - 7h às 8h40 {"\n"}
+        Química - 9h às 10h40 {"\n"}
+        Inglês - 10h50 às 12h30
       </Text>
       <StatusBar style="auto" />
     </View>

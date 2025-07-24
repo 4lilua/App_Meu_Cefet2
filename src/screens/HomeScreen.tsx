@@ -20,7 +20,7 @@ export default function HomeScreen({ navigation }: any) {
   }
 
   return (
-    <View style={styles.home}>
+    <View style={styles.container}>
       <View style={styles.logo}>
         <Image source={logo} style={styles.logo} />
       </View>
@@ -44,14 +44,21 @@ export default function HomeScreen({ navigation }: any) {
             value={curso}
             placeholder="Digite seu curso"
         />
-        <View style={styles.botoesContainer}>
-          <Pressable style={styles.botao} onPress={(mudarParaHorario)}>
-            <Text style={styles.textBotao}>Ver Horários</Text>
-          </Pressable>
-          <Pressable style={styles.botao} onPress={(irParaSite)}>
-            <Text style={styles.textBotao}>Visitar Site</Text>
-          </Pressable>
+        <Pressable style={styles.botao} onPress={(mudarParaHorario)}>
+          <Text style={styles.textBotao}>Ver Horários</Text>
+        </Pressable>
+        <Text style={styles.texto}>Últimas notícias:</Text>
+        <View style={styles.noticiasContainer}>
+          <Text style={styles.textoHorario}>
+          | Avaliações Somativas 1º Semestre – Ano Letivo de 2025 {"\n\n"}
+          | CEFET-MG está entre as melhores escolas públicas do país no Enem 2024 {"\n\n"}
+          | Chamada interna para aluno de iniciação científica
+          </Text>
         </View>
+
+        <Pressable style={styles.botao} onPress={(irParaSite)}>
+          <Text style={styles.textBotao}>Visitar Site</Text>
+        </Pressable>
       <StatusBar style="auto" />
     </View>
   );
